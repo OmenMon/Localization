@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<OmenMon>
+
+    <!-- Localizable Messages: US English (Template) -->
+
+    <!-- The default messages defined in Library\LocaleData.cs can be overriden
+         by including their definitions in the OmenMon.xml configuration file -->
+
+    <Messages>
+
+        <!-- Language identifier -->
+        <String Key="_Language">en_US</String>
+
+        <!-- CLI -->
+        <String Key="CliHeader">Hardware Monitoring &amp; Control Utility</String>
+        <String Key="CliHeaderVersion">Version</String>
+        <String Key="CliStateOn">Yes</String>
+        <String Key="CliStateOff">No</String>
+        <String Key="CliTranslated">Translation Template</String>
+
+        <!-- CLI: BIOS -->
+        <String Key="CliBios">BIOS</String>
+        <String Key="CliBiosAdapter">Smart Power Adapter Status</String>
+        <String Key="CliBiosAnim">LED Animation Table</String>
+        <String Key="CliBiosBacklight">Keyboard Backlight</String>
+        <String Key="CliBiosColor">Keyboard Backlight Color Table</String>
+        <String Key="CliBiosColorZones">Zones</String>
+        <String Key="CliBiosCpuPowerLimit1">CPU Power Limit 1</String>
+        <String Key="CliBiosCpuPowerLimit4">CPU Power Limit 4</String>
+        <String Key="CliBiosCpuPowerLimitWithGpu">CPU Power Limit Concurrent with GPU</String>
+        <String Key="CliBiosFanCount">Fan Count</String>
+        <String Key="CliBiosFanLevelN">Fan #{0} Level</String>
+        <String Key="CliBiosFanMax">Maximum Fan Speed</String>
+        <String Key="CliBiosFanMode">Fan Mode</String>
+        <String Key="CliBiosFanTable">Fan Speed Level Table</String>
+        <String Key="CliBiosFanTableFans">Fans</String>
+        <String Key="CliBiosFanTableLevels">Levels</String>
+        <String Key="CliBiosFanType">Fan Type</String>
+        <String Key="CliBiosFanTypeN">Fan #{0} Type</String>
+        <String Key="CliBiosGpuMode">Graphics Mode (Legacy)</String>
+        <String Key="CliBiosGpuPower">GPU Power Settings</String>
+        <String Key="CliBiosGpuPowerCustomTgp">GPU Custom Total Graphics Power (cTGP)</String>
+        <String Key="CliBiosGpuPowerDState">GPU Device Power State (DState)</String>
+        <String Key="CliBiosGpuPowerPeakTemperature">GPU Peak Temperature Sensor Threshold</String>
+        <String Key="CliBiosGpuPowerPpab">GPU Processing Performance AI Boost (PPAB)</String>
+        <String Key="CliBiosHasBacklight">Keyboard Backlight Support</String>
+        <String Key="CliBiosHasMemoryOverclock">Memory Overclocking Support</String>
+        <String Key="CliBiosHasOverclock">Overclocking Support</String>
+        <String Key="CliBiosHasUndervolt">BIOS Undervolt Support</String>
+        <String Key="CliBiosIdle">Idle Mode</String>
+        <String Key="CliBiosKbdType">Keyboard Type</String>
+        <String Key="CliBiosMfgDate">Manufacturing (Born-On) Date</String>
+        <String Key="CliBiosMfgDateNote">YYYYMMDD</String>
+        <String Key="CliBiosSystem">System Design Data</String>
+        <String Key="CliBiosSystemBiosOc">BIOS-Defined Overclocking</String>
+        <String Key="CliBiosSystemDefaultCpuPowerLimit4">Default CPU Power Limit 4</String>
+        <String Key="CliBiosSystemDefaultCpuPowerLimitWithGpu">Default CPU Concurrent Power Limit w/GPU</String>
+        <String Key="CliBiosSystemDefaultCpuPowerLimitWithGpuNote">Cybug 23C1 Onwards</String>
+        <String Key="CliBiosSystemGpuModeSwitch">Graphics Mode Switching Support</String>
+        <String Key="CliBiosSystemStatusFlags">Status Flags</String>
+        <String Key="CliBiosSystemSupportFlags">Support Flags</String>
+        <String Key="CliBiosSystemThermalPolicyVersion">Thermal Policy Version</String>
+        <String Key="CliBiosSystemUnknown2">Unknown Byte</String>
+        <String Key="CliBiosSystemUnknown2Note">Observed Constant 0x35 = 53</String>
+        <String Key="CliBiosTemp">Temperature</String>
+        <String Key="CliBiosThrottling">Thermal Throttling Status</String>
+        <String Key="CliBiosXmp">Memory XMP Profile</String>
+
+        <!-- CLI: Embedded Controller -->
+        <String Key="CliEc">Embedded Controller</String>
+        <String Key="CliEcMon">Embedded Controller Monitor</String>
+        <String Key="CliEcByte">Byte</String>
+        <String Key="CliEcRegister">Register</String>
+        <String Key="CliEcWord">Word</String>
+        <String Key="CliEcWordNote">(Little-Endian)</String>
+
+        <!-- CLI: Program -->
+        <String Key="CliProg">Program</String>
+        <String Key="CliProgCallback">Callback</String>
+        <String Key="CliProgName">Program</String>
+        <String Key="CliProgFanMode">Fan Mode</String>
+        <String Key="CliProgGpuPower">GPU Power</String>
+
+        <!-- CLI: Task -->
+        <String Key="CliTask">Task Scheduling</String>
+        <String Key="CliTaskGui">Autorun on User Logon</String>
+        <String Key="CliTaskKey">Omen Key Interception</String>
+        <String Key="CliTaskMux">Advanced Optimus Bug Fix</String>
+
+        <!-- CLI: Usage -->
+        <String Key="CliUsage">Usage Information</String>
+        <String Key="CliUsageText">Usage: {0} [-&lt;Arg1&gt; [...] [-&lt;ArgN&gt; [...]]]
+Where:
+&lt;Arg#&gt;
+  -Bios                     Run all the BIOS operations that only retrieve information
+  -Bios &lt;BiosOp&gt;[=&lt;Data&gt;]+  Perform one or more BIOS operations with optional parameters
+  -Ec                       Get the value of all Embedded Controller registers in a table format
+  -Ec [&lt;Reg&gt;][=&lt;Byte&gt;]+     Get or set byte value(s) of one or more specific registers
+  -Ec [&lt;Reg&gt;(2)][=&lt;Word&gt;]+  Get or set word value(s) of one or more pair(s) of consecutive specific registers
+  -EcMon [FileName]         Monitor the values of all registers for changes and report, optionally save to file
+  -Prog                     List available fan control programs loaded from the configuration file
+  -Prog &lt;Name&gt;              Run a specified fan control program
+  -Run &lt;TName&gt; [&lt;Args&gt;]     Run a specified task (in headless mode, no console output)
+  -Task                     Check the status of all scheduled tasks
+  -Task &lt;TName&gt;[=&lt;Flag&gt;]+   Enable or disable a scheduled task
+  -?|-H|[-]-Help|[-]-Usage  Show usage information
+&lt;BiosOp&gt;
+  Cpu:PL1=&lt;Byte&gt; Cpu:PL4=&lt;Byte&gt; Cpu:PLGpu=&lt;Byte&gt; Gpu[=&lt;GpuPreset&gt;] GpuMode[=&lt;GpuMode&gt;] Xmp=&lt;Flag&gt;
+  FanCount FanLevel[=&lt;FanLevel&gt;] FanMax[=&lt;Flag&gt;] FanMode=&lt;FanMode&gt; FanTable[=&lt;FanTable&gt;] FanType
+  Idle[=&lt;Flag&gt;] Temp Throttling MfgDate System Adapter HasOverclock HasMemoryOverclock HasUndervolt
+  KbdType HasBacklight Backlight[=&lt;Flag&gt;] Color[=&lt;Color&gt;] Anim[=&lt;ByteArray&gt;]
+&lt;Data&gt;
+{1}
+Arguments are case-insensitive. Any argument can appear any number of times.</String>
+
+        <!-- GUI -->
+        <String Key="GuiAlreadyRunning">Already running in the background: click on the notification area icon or run OmenMon -Usage for command-line parameters</String>
+        <String Key="GuiPromptReboot">A system restart is required\r\nfor the change to take effect\r\n\r\nRestart now?</String>
+        <String Key="GuiTranslated">Translation Template</String>
+
+        <!-- GUI: About (doubles as an error form) -->
+        <String Key="GuiAboutTitle">About OmenMon</String>
+        <String Key="GuiAboutTitleError">OmenMon Error</String>
+        <String Key="GuiAboutCaption">Omen Hardware Control &amp; Monitoring</String>
+        <String Key="GuiAboutText">{\\rtf1\\ansi Monitor temperature and control fan speeds using WMI BIOS and the Embedded Controller. Lightweight, runs in the background with minimal footprint. Has a command-line mode too.}</String>
+
+        <!-- GUI: Main -->
+        <String Key="GuiMainFan">Fan Monitoring &amp; Control</String>
+        <String Key="GuiMainFan0">CPU</String>
+        <String Key="GuiMainFan1">GPU</String>
+        <String Key="GuiMainFanAuto">Auto</String>
+        <String Key="GuiMainFanConst">Const</String>
+        <String Key="GuiMainFanMax">Max</String>
+        <String Key="GuiMainFanProg">Prog</String>
+        <String Key="GuiMainFanProgSet">Set Fan Program</String>
+        <String Key="GuiMainFanProgSetNoSel">No program selected</String>
+        <String Key="GuiMainFanOff">Off</String>
+        <String Key="GuiMainKbd">Keyboard Backlight &amp; Color</String>
+        <String Key="GuiMainKbdColorPickLeft">Left Zone Color</String>
+        <String Key="GuiMainKbdColorPickMiddle">Middle Zone Color</String>
+        <String Key="GuiMainKbdColorPickRight">Right Zone Color</String>
+        <String Key="GuiMainKbdColorPickWasd">WASD Keys Color</String>
+        <String Key="GuiMainKbdColorPresetAdd">Save Preset</String>
+        <String Key="GuiMainKbdColorPresetAddValueDefault">New Preset</String>
+        <String Key="GuiMainKbdColorPresetDel">Delete Preset</String>
+        <String Key="GuiMainKbdColorPresetDelConfirm">Are you sure?</String>
+        <String Key="GuiMainKbdColorPresetDelNoSel">No preset selected</String>
+        <String Key="GuiMainKbdColorPresetDelPrompt">Delete</String>
+        <String Key="GuiMainSys">System Status &amp; Information</String>
+        <String Key="GuiMainSysMfg">Mfg</String>
+        <String Key="GuiMainSysAdapterNotSupported">\\cf1 AC Unknown</String>
+        <String Key="GuiMainSysAdapterMeetsRequirement">\\cf3 AC Power OK</String>
+        <String Key="GuiMainSysAdapterBelowRequirement">\\cf4 AC Power Low</String>
+        <String Key="GuiMainSysAdapterBatteryPower">\\cf1 No AC Power</String>
+        <String Key="GuiMainSysAdapterNotFunctioning">\\cf4 AC Fail</String>
+        <String Key="GuiMainSysAdapterError">\\cf4 AC Error</String>
+        <String Key="GuiMainSysGpu">GPU</String>
+        <String Key="GuiMainSysGpuPpab">PPAB</String>
+        <String Key="GuiMainSysGpuCustomTgp">cTGP</String>
+        <String Key="GuiMainSysGpuDState">DState</String>
+        <String Key="GuiMainSysThrottlingDefault">\\cf5 Not Throttling</String>
+        <String Key="GuiMainSysThrottlingOn">\\cf4 Throttling</String>
+        <String Key="GuiMainSysMsgWelcome">Welcome!</String>
+        <String Key="GuiMainTitle">Omen Hardware Control &amp; Monitoring</String>
+        <String Key="GuiMainTmp">Temperature Sensor Readings</String>
+        <String Key="GuiMainTmpCPUT">CPUT</String>
+        <String Key="GuiMainTmpGPTM">GPTM</String>
+        <String Key="GuiMainTmpIRSN">IRSN</String>
+        <String Key="GuiMainTmpRTMP">RTMP</String>
+        <String Key="GuiMainTmpTMP1">TMP1</String>
+        <String Key="GuiMainTmpTNT2">TNT2</String>
+        <String Key="GuiMainTmpTNT3">TNT3</String>
+        <String Key="GuiMainTmpTNT4">TNT4</String>
+        <String Key="GuiMainTmpTNT5">TNT5</String>
+
+        <!-- GUI: Menu -->
+        <String Key="GuiMenuSubFan">Fan</String>
+        <String Key="GuiMenuActFanMax">Maximum</String>
+        <String Key="GuiMenuActFanModeCool">Cool</String>
+        <String Key="GuiMenuActFanModeDefault">Default</String>
+        <String Key="GuiMenuActFanModeL0">Legacy Level 0</String>
+        <String Key="GuiMenuActFanModeL1">Legacy Level 1</String>
+        <String Key="GuiMenuActFanModeL2">Legacy Level 2</String>
+        <String Key="GuiMenuActFanModeL3">Legacy Level 3</String>
+        <String Key="GuiMenuActFanModeL4">Legacy Level 4</String>
+        <String Key="GuiMenuActFanModeL5">Legacy Level 5</String>
+        <String Key="GuiMenuActFanModeL6">Legacy Level 6</String>
+        <String Key="GuiMenuActFanModeL7">Legacy Level 7</String>
+        <String Key="GuiMenuActFanModeL8">Legacy Level 8</String>
+        <String Key="GuiMenuActFanModeLegacyCool">Legacy Cool</String>
+        <String Key="GuiMenuActFanModeLegacyDefault">Legacy Default</String>
+        <String Key="GuiMenuActFanModeLegacyExtreme">Legacy Extreme</String>
+        <String Key="GuiMenuActFanModeLegacyPerformance">Legacy Performance</String>
+        <String Key="GuiMenuActFanModeLegacyQuiet">Legacy Quiet</String>
+        <String Key="GuiMenuActFanModePerformance">Performance</String>
+        <String Key="GuiMenuActFanOff">Off</String>
+        <String Key="GuiMenuSubGpu">Graphics</String>
+        <String Key="GuiMenuActGpuDisplayColor">Reload Color Profile</String>
+        <String Key="GuiMenuActGpuDisplayOff">Set Display Off</String>
+        <String Key="GuiMenuActGpuPowerMin">Base Power</String>
+        <String Key="GuiMenuActGpuPowerMed">Extra Power</String>
+        <String Key="GuiMenuActGpuPowerMax">Extra Power with Boost</String>
+        <String Key="GuiMenuActGpuRefreshHigh">High Refresh Rate</String>
+        <String Key="GuiMenuActGpuRefreshLow">Standard Refresh Rate</String>
+        <String Key="GuiMenuActGpuModeDiscrete">Discrete Exclusive</String>
+        <String Key="GuiMenuActGpuModeOptimus">Optimus Soft-Switching</String>
+        <String Key="GuiMenuSubKbd">Keyboard</String>
+        <String Key="GuiMenuActKbdBacklight">Backlight</String>
+        <String Key="GuiMenuActKbdColorPresetDefaultApp">OmenMon Cool</String>
+        <String Key="GuiMenuActKbdColorPresetDefaultOem">OEM Default</String>
+        <String Key="GuiMenuSubSet">Settings</String>
+        <String Key="GuiMenuActSetStayTop">Stay on Top</String>
+        <String Key="GuiMenuActSetIconDyn">Dynamic Icon</String>
+        <String Key="GuiMenuActSetIconDynBg">Dynamic Background</String>
+        <String Key="GuiMenuActSetTaskGui">Start with Windows</String>
+        <String Key="GuiMenuActSetAutoconfig">Apply Settings on Startup</String>
+        <String Key="GuiMenuActSetTaskKey">Intercept Omen Key</String>
+        <String Key="GuiMenuActSetTaskMux">Advanced Optimus Fix</String>
+        <String Key="GuiMenuActToggleFormMain">Show Monitor</String>
+        <String Key="GuiMenuActToggleFormMainHide">Hide Monitor</String>
+        <String Key="GuiMenuActExit">Exit</String>
+
+        <!-- GUI: Tooltips -->
+        <String Key="GuiTipBtnAccept">Confirm and proceed</String>
+        <String Key="GuiTipBtnCancel">Cancel and close the dialog</String>
+        <String Key="GuiTipFan0Cap">The left-hand side shows the first (CPU) fan readings</String>
+        <String Key="GuiTipFan1Cap">The right-hand side shows the second (GPU) fan readings</String>
+        <String Key="GuiTipFanUnitVal">Fan speed is measured in revolutions per minute (rpm)</String>
+        <String Key="GuiTipFan0Val">Real-time CPU fan speed reading [rpm]</String>
+        <String Key="GuiTipFan1Val">Real-time GPU fan speed reading [rpm]</String>
+        <String Key="GuiTipFanUnitRte">Fan relative rate is measured in percent (%)</String>
+        <String Key="GuiTipFan0Rte">CPU fan relative rate [%]</String>
+        <String Key="GuiTipFan0RteBar">CPU fan relative rate illustrated on a bar scale</String>
+        <String Key="GuiTipFan1Rte">GPU fan relative rate [%]</String>
+        <String Key="GuiTipFan1RteBar"> GPU fan relative rate illustrated on a bar scale " Note the origin is on the right-hand side</String>
+        <String Key="GuiTipFan0Lvl">CPU fan level [krpm] "Custom speed: move slider "and click button to apply</String>
+        <String Key="GuiTipFan1Lvl">GPU fan level [krpm] "Custom speed: move slider "and click button to apply</String>
+        <String Key="GuiTipFanCountdown">If applicable, this area shows the countdown until "the BIOS reverts back to the automatic defaults "Select Const to prevent the timer from running out</String>
+        <String Key="GuiTipFanProg">Fan program "Speed will follow temperature "according to your preferences</String>
+        <String Key="GuiTipFanProgCmb">Choose a fan program from the drop-down list</String>
+        <String Key="GuiTipFanAuto">Automatic mode (the default setting)</String>
+        <String Key="GuiTipFanMode">Choose a fan mode from the drop-down list</String>
+        <String Key="GuiTipFanConst">Constant speed mode "Use trackbars to set each fan level</String>
+        <String Key="GuiTipFanMax">Maximum speed mode "Fans operate at maximum speed "(5,500 and 5,700 rpm)</String>
+        <String Key="GuiTipFanOff">Fans off "Power off the fans completely</String>
+        <String Key="GuiTipFanSet">Click to apply current settings "Button is highlighted when settings have changed</String>
+        <String Key="GuiTipKbdBacklight">Toggle keyboard backlight on and off</String>
+        <String Key="GuiTipKbdColorPreset">Choose a color preset to apply "from the drop-down box</String>
+        <String Key="GuiTipKbdColorPresetDel">Delete the currently-selected preset</String>
+        <String Key="GuiTipKbdColorPresetSet">Save the current settings as a preset</String>
+        <String Key="GuiTipKbdColorVal">Adjust colors using their hexadecimal values with this parameter "Set colors from the command line with: OmenMon -Bios Color=&lt;Param&gt;</String>
+        <String Key="GuiTipKbdPic">Click on a zone to change the color for that zone "with a color picker, changes take place immediately</String>
+        <String Key="GuiTipSys">System status information is shown here</String>
+        <String Key="GuiTipTmpCPUT">CPU Temperature</String>
+        <String Key="GuiTipTmpGPTM">GPU Temperature</String>
+        <String Key="GuiTipTmpBIOS">Temperature reported by the BIOS</String>
+        <String Key="GuiTipTmpIRSN">Infrared Sensor Temperature</String>
+        <String Key="GuiTipTmpRTMP">Platform Controller Host Temperature</String>
+        <String Key="GuiTipTmpTMP1">Memory Temperature</String>
+        <String Key="GuiTipTmpTNT2">Interpretation Unknown</String>
+        <String Key="GuiTipTmpTNT3">Storage</String>
+        <String Key="GuiTipTmpTNT4">Storage</String>
+        <String Key="GuiTipTmpTNT5">Interpretation Unknown</String>
+        <String Key="GuiTipTxtInput">Enter the value</String>
+
+        <!-- Data formats -->
+        <String Key="DataTypeBool">&lt;Flag&gt;</String>
+        <String Key="DataSyntaxBool">&lt;On|True|Yes|1&gt; | &lt;Off|False|No|0&gt;</String>
+
+        <String Key="DataTypeByte">&lt;Byte&gt;</String>
+        <String Key="DataSyntaxByte">&lt;0-255|0x00-0xFF|0b00000000-0b11111111&gt;</String>
+
+        <String Key="DataTypeByteArray">&lt;ByteArray&gt;</String>
+        <String Key="DataSyntaxByteArray">&lt;00-FF&gt;+</String>
+
+        <String Key="DataTypeColor4">&lt;Color&gt;</String>
+        <String Key="DataSyntaxColor4">&lt;PresetName&gt; | &lt;RGB0&gt;:&lt;RGB1&gt;:&lt;RGB2&gt;:&lt;RGB3&gt; (&lt;RGB#&gt;: 000000-FFFFFF)</String>
+
+        <String Key="DataTypeFanLevel">&lt;FanLevel&gt;</String>
+        <String Key="DataSyntaxFanLevel">&lt;Fan1&gt;,&lt;Fan2&gt; (&lt;Fan#&gt;: 0-255|0x00-0xFF|0b00000000-0b11111111)</String>
+
+        <String Key="DataTypeFanMode">&lt;FanMode&gt;</String>
+        <String Key="DataSyntaxFanMode">&lt;FanModeId|0-255|0x00-0xFF|0b...&gt; (&lt;FanModeId&gt;: Default|Performance|Cool|L#, &lt;#&gt;: 0-8)</String>
+
+        <String Key="DataTypeFanTable">&lt;FanTable&gt;</String>
+        <String Key="DataSyntaxFanTable">&lt;Fan1&gt;,&lt;Fan2&gt;,&lt;Temp&gt;[:...[:...]] (&lt;Fan#&gt;, &lt;Temp&gt;: &lt;Byte&gt;)</String>
+
+        <String Key="DataTypeGpuMode">&lt;GpuMode&gt;</String>
+        <String Key="DataSyntaxGpuMode">&lt;GpuModeId|0-255|0x00-0xFF|0b...&gt; (&lt;GpuModeId&gt;: Hybrid|Discrete|Optimus)</String>
+
+        <String Key="DataTypeGpuPowerLevel">&lt;GpuPreset&gt;</String>
+        <String Key="DataSyntaxGpuPowerLevel">Max[imum] | Med[ium]|Mid[dle] | Min[imum]</String>
+
+        <String Key="DataTypeReg">&lt;Reg&gt;</String>
+        <String Key="DataSyntaxReg">&lt;NAME|0-255|0x00-0xFF|0b00000000-0b11111111&gt;</String>
+        <String Key="DataSyntaxOrTwo">[(2)]</String>
+
+        <String Key="DataTypeTName">&lt;TName&gt;</String>
+        <String Key="DataSyntaxTName">Autorun (GUI) | Key (Omen Key Capture) | Mux (Advanced Optimus Fix)</String>
+
+        <String Key="DataTypeWord">&lt;Word&gt;</String>
+        <String Key="DataSyntaxWord">&lt;0-65535|0x0000-0xFFFF|0b0000000000000000-0b1111111111111111&gt;</String>
+
+        <!-- Error messages -->
+        <String Key="ErrArgUnknown">Unknown argument</String>
+        <String Key="ErrBiosCall">BIOS call failed</String>
+        <String Key="ErrBiosInit">Failed to initialize the BIOS controls. Please make sure you have a compatible HP system, and that the ACPI\\PNP0C14 driver is installed.</String>
+        <String Key="ErrBiosNull">Failed to instantiate the BIOS controls</String>
+        <String Key="ErrBiosSend">Failed to make the BIOS call</String>
+        <String Key="ErrBiosSendCommand">Command not available</String>
+        <String Key="ErrBiosSendSize">Input or output size too small</String>
+        <String Key="ErrBiosSendUnknown">Unknown response from BIOS: {0}</String>
+        <String Key="ErrConfigLoad">Failed to load configuration data</String>
+        <String Key="ErrConfigSave">Failed to save configuration data</String>
+        <String Key="ErrEcInit">Failed to initialize the embedded controller</String>
+        <String Key="ErrEcLock">Failed to acquire embedded controller exclusive lock</String>
+        <String Key="ErrEcNull">Failed to instantiate the embedded controller</String>
+        <String Key="ErrFileSave">Failed to save the file</String>
+        <String Key="ErrLocaleNull">Failed to instantiate the localizable message system</String>
+        <String Key="ErrLocaleLoad">Failed to load localizable messages from the external file</String>
+        <String Key="ErrNeedRegisterRead">Expected a register to read from</String>
+        <String Key="ErrNeedRegisterWrite">Expected a register to write to</String>
+        <String Key="ErrNeedValueBool">Expected a Boolean flag</String>
+        <String Key="ErrNeedValueByte">Expected a byte value to set</String>
+        <String Key="ErrNeedValueByteArray">Expected a byte array value to set</String>
+        <String Key="ErrNeedValueColor4">Expected an array of four color values</String>
+        <String Key="ErrNeedValueFanLevel">Expected a pair of fan speed levels</String>
+        <String Key="ErrNeedValueFanMode">Expected a fan mode</String>
+        <String Key="ErrNeedValueFanTable">Expected an array of fan table entries</String>
+        <String Key="ErrNeedValueGpuMode">Expected a GPU mode</String>
+        <String Key="ErrNeedValueGpuPowerLevel">Expected a GPU power preset</String>
+        <String Key="ErrNeedValueWord">Expected a word value to set</String>
+        <String Key="ErrNotImplemented">Not implemented</String>
+        <String Key="ErrProgName">No such program</String>
+        <String Key="ErrProgNone">No programs configured</String>
+        <String Key="ErrUnexpected">Exception</String>
+        <String Key="ErrUnexpectedReally">No details available</String>
+
+        <!-- Program -->
+        <String Key="Prog">Program</String>
+        <String Key="ProgEnd">Program Ended:</String>
+        <String Key="ProgFans">Fans</String>
+        <String Key="ProgLvl">Lvl</String>
+        <String Key="ProgT">T</String>
+        <String Key="ProgSubMax">max</String>
+
+        <!-- Units -->
+        <String Key="UnitFrequency">Hz</String>
+        <String Key="UnitPercent">%</String>
+        <String Key="UnitPower">W</String>
+        <String Key="UnitRotationRate">rpm</String>
+        <String Key="UnitTemperature">°C</String>
+
+        <!-- XML -->
+        <String Key="_ConfigXmlTemplate">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;OmenMon&gt;
+    &lt;!-- Automatically generated because no prior configuration file was found.
+         A version annotated with extensive comments is distributed with OmenMon.  --&gt;
+    &lt;Config/&gt;
+    &lt;Messages&gt;
+    &lt;/Messages&gt;
+&lt;/OmenMon&gt;
+        </String>
+
+    </Messages>
+
+</OmenMon>
