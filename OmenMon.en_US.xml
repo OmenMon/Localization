@@ -158,6 +158,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <String Key="GuiMainSysGpuPpab">PPAB</String>
         <String Key="GuiMainSysGpuCustomTgp">cTGP</String>
         <String Key="GuiMainSysGpuDState">DState</String>
+        <String Key="GuiMainSysThrottlingUnknown">\\cf1 </String>
         <String Key="GuiMainSysThrottlingDefault">\\cf5 Not Throttling</String>
         <String Key="GuiMainSysThrottlingOn">\\cf4 Throttling</String>
         <String Key="GuiMainSysMsgWelcome">Welcome!</String>
