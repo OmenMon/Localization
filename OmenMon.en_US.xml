@@ -121,7 +121,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <!-- GUI: About (doubles as an error form) -->
         <String Key="GuiAboutTitle">About OmenMon</String>
         <String Key="GuiAboutTitleError">OmenMon Error</String>
-        <String Key="GuiAboutCaption">Omen Hardware Control &amp; Monitoring</String>
+        <String Key="GuiAboutCaption">Omen Hardware Monitoring &amp; Control</String>
         <String Key="GuiAboutText">{\\rtf1\\ansi Monitor temperature and control fan speeds using WMI BIOS and the Embedded Controller. Lightweight, runs in the background with minimal footprint. Has a command-line mode too.}</String>
 
         <!-- GUI: Main -->
@@ -161,7 +161,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <String Key="GuiMainSysThrottlingDefault">\\cf5 Not Throttling</String>
         <String Key="GuiMainSysThrottlingOn">\\cf4 Throttling</String>
         <String Key="GuiMainSysMsgWelcome">Welcome!</String>
-        <String Key="GuiMainTitle">Omen Hardware Control &amp; Monitoring</String>
+        <String Key="GuiMainTitle">Omen Hardware Monitoring &amp; Control</String>
         <String Key="GuiMainTmp">Temperature Sensor Readings</String>
         <String Key="GuiMainTmpCPUT">CPUT</String>
         <String Key="GuiMainTmpGPTM">GPTM</String>
