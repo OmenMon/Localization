@@ -122,7 +122,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <String Key="GuiAboutTitle">About OmenMon</String>
         <String Key="GuiAboutTitleError">OmenMon Error</String>
         <String Key="GuiAboutCaption">Omen Hardware Monitoring &amp; Control</String>
-        <String Key="GuiAboutText">{\\rtf1\\ansi Monitor temperature and control fan speeds using WMI BIOS and the Embedded Controller. Lightweight, runs in the background with minimal footprint. Has a command-line mode too.}</String>
+        <String Key="GuiAboutText">{\rtf1\ansi Monitor temperature and control fan speeds using WMI BIOS and the Embedded Controller. Lightweight, runs in the background with minimal footprint. Has a command-line mode too.}</String>
 
         <!-- GUI: Main -->
         <String Key="GuiMainFan">Fan Monitoring &amp; Control</String>
@@ -148,19 +148,19 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <String Key="GuiMainKbdColorPresetDelPrompt">Delete</String>
         <String Key="GuiMainSys">System Status &amp; Information</String>
         <String Key="GuiMainSysMfg">Mfg</String>
-        <String Key="GuiMainSysAdapterNotSupported">\\cf1 AC Unknown</String>
-        <String Key="GuiMainSysAdapterMeetsRequirement">\\cf3 AC Power OK</String>
-        <String Key="GuiMainSysAdapterBelowRequirement">\\cf4 AC Power Low</String>
-        <String Key="GuiMainSysAdapterBatteryPower">\\cf1 No AC Power</String>
-        <String Key="GuiMainSysAdapterNotFunctioning">\\cf4 AC Fail</String>
-        <String Key="GuiMainSysAdapterError">\\cf4 AC Error</String>
+        <String Key="GuiMainSysAdapterNotSupported">\cf1 AC Unknown</String>
+        <String Key="GuiMainSysAdapterMeetsRequirement">\cf3 AC Power OK</String>
+        <String Key="GuiMainSysAdapterBelowRequirement">\cf4 AC Power Low</String>
+        <String Key="GuiMainSysAdapterBatteryPower">\cf1 No AC Power</String>
+        <String Key="GuiMainSysAdapterNotFunctioning">\cf4 AC Fail</String>
+        <String Key="GuiMainSysAdapterError">\cf4 AC Error</String>
         <String Key="GuiMainSysGpu">GPU</String>
         <String Key="GuiMainSysGpuPpab">PPAB</String>
         <String Key="GuiMainSysGpuCustomTgp">cTGP</String>
         <String Key="GuiMainSysGpuDState">DState</String>
-        <String Key="GuiMainSysThrottlingUnknown">\\cf1 </String>
-        <String Key="GuiMainSysThrottlingDefault">\\cf5 Not Throttling</String>
-        <String Key="GuiMainSysThrottlingOn">\\cf4 Throttling</String>
+        <String Key="GuiMainSysThrottlingUnknown">\cf1 </String>
+        <String Key="GuiMainSysThrottlingDefault">\cf5 Not Throttling</String>
+        <String Key="GuiMainSysThrottlingOn">\cf4 Throttling</String>
         <String Key="GuiMainSysMsgWelcome">Welcome!</String>
         <String Key="GuiMainTitle">Omen Hardware Monitoring &amp; Control</String>
         <String Key="GuiMainTmp">Temperature Sensor Readings</String>
@@ -305,7 +305,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <!-- Error messages -->
         <String Key="ErrArgUnknown">Unknown argument</String>
         <String Key="ErrBiosCall">BIOS call failed</String>
-        <String Key="ErrBiosInit">Failed to initialize the BIOS controls. Please make sure you have a compatible HP system, and that the ACPI\\PNP0C14 driver is installed.</String>
+        <String Key="ErrBiosInit">Failed to initialize the BIOS controls. Please make sure you have a compatible HP system, and that the ACPI\PNP0C14 driver is installed.</String>
         <String Key="ErrBiosNull">Failed to instantiate the BIOS controls</String>
         <String Key="ErrBiosSend">Failed to make the BIOS call</String>
         <String Key="ErrBiosSendCommand">Command not available</String>
