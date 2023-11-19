@@ -339,6 +339,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
 
         <!-- Program -->
         <String Key="Prog">Program</String>
+        <String Key="ProgAlt">[Alt]</String>
         <String Key="ProgEnd">Program Ended:</String>
         <String Key="ProgFans">Fans</String>
         <String Key="ProgLvl">Lvl</String>
