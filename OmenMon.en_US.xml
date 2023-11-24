@@ -23,6 +23,8 @@
         <String Key="CliBiosAdapter">Smart Power Adapter Status</String>
         <String Key="CliBiosAnim">LED Animation Table</String>
         <String Key="CliBiosBacklight">Keyboard Backlight</String>
+        <String Key="CliBiosBornDate">Born-On Date</String>
+        <String Key="CliBiosBornDateNote">YYYYMMDD</String>
         <String Key="CliBiosColor">Keyboard Backlight Color Table</String>
         <String Key="CliBiosColorZones">Zones</String>
         <String Key="CliBiosCpuPowerLimit1">CPU Power Limit 1</String>
@@ -49,8 +51,6 @@
         <String Key="CliBiosHasUndervolt">BIOS Undervolt Support</String>
         <String Key="CliBiosIdle">Idle Mode</String>
         <String Key="CliBiosKbdType">Keyboard Type</String>
-        <String Key="CliBiosMfgDate">Manufacturing (Born-On) Date</String>
-        <String Key="CliBiosMfgDateNote">YYYYMMDD</String>
         <String Key="CliBiosSystem">System Design Data</String>
         <String Key="CliBiosSystemBiosOc">BIOS-Defined Overclocking</String>
         <String Key="CliBiosSystemDefaultCpuPowerLimit4">Default CPU Power Limit 4</String>
@@ -107,7 +107,7 @@ Where:
 &lt;BiosOp&gt;
   Cpu:PL1=&lt;Byte&gt; Cpu:PL4=&lt;Byte&gt; Cpu:PLGpu=&lt;Byte&gt; Gpu[=&lt;GpuPreset&gt;] GpuMode[=&lt;GpuMode&gt;] Xmp=&lt;Flag&gt;
   FanCount FanLevel[=&lt;FanLevel&gt;] FanMax[=&lt;Flag&gt;] FanMode=&lt;FanMode&gt; FanTable[=&lt;FanTable&gt;] FanType
-  Idle[=&lt;Flag&gt;] Temp Throttling MfgDate System Adapter HasOverclock HasMemoryOverclock HasUndervolt
+  Idle[=&lt;Flag&gt;] Temp Throttling BornDate System Adapter HasOverclock HasMemoryOverclock HasUndervolt
   KbdType HasBacklight Backlight[=&lt;Flag&gt;] Color[=&lt;Color&gt;] Anim[=&lt;ByteArray&gt;]
 &lt;Data&gt;
 {1}
@@ -147,13 +147,13 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <String Key="GuiMainKbdColorPresetDelNoSel">No preset selected</String>
         <String Key="GuiMainKbdColorPresetDelPrompt">Delete</String>
         <String Key="GuiMainSys">System Status &amp; Information</String>
-        <String Key="GuiMainSysMfg">Mfg</String>
         <String Key="GuiMainSysAdapterNotSupported">\cf1 AC Unknown</String>
         <String Key="GuiMainSysAdapterMeetsRequirement">\cf3 AC Power OK</String>
         <String Key="GuiMainSysAdapterBelowRequirement">\cf4 AC Power Low</String>
         <String Key="GuiMainSysAdapterBatteryPower">\cf1 No AC Power</String>
         <String Key="GuiMainSysAdapterNotFunctioning">\cf4 AC Fail</String>
         <String Key="GuiMainSysAdapterError">\cf4 AC Error</String>
+        <String Key="GuiMainSysBorn">*</String>
         <String Key="GuiMainSysGpu">GPU</String>
         <String Key="GuiMainSysGpuPpab">PPAB</String>
         <String Key="GuiMainSysGpuCustomTgp">cTGP</String>
