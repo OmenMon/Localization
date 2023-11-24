@@ -262,6 +262,7 @@ Arguments are case-insensitive. Any argument can appear any number of times.</St
         <String Key="GuiTipTmpTNT3">Storage</String>
         <String Key="GuiTipTmpTNT4">Storage</String>
         <String Key="GuiTipTmpTNT5">Interpretation Unknown</String>
+        <String Key="GuiTipTmpUnknown">Custom Sensor</String>
         <String Key="GuiTipTxtInput">Enter the value</String>
 
         <!-- Data formats -->
