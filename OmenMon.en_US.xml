@@ -343,7 +343,7 @@ than for any other sensor</String>
         <!-- Program -->
         <String Key="Prog">Program</String>
         <String Key="ProgAlt">[Alt]</String>
-        <String Key="ProgEnd">Program Ended:</String>
+        <String Key="ProgEnd">Program Ended</String>
         <String Key="ProgFans">Fans</String>
         <String Key="ProgLvl">Lvl</String>
         <String Key="ProgT">T</String>
