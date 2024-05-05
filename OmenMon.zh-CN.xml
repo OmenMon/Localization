@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OmenMon>
+
+  <!-- Localizable Messages: Simplified Chinese -->
+
+  <!-- The default messages defined in Library\LocaleData.cs can be overriden
+         by including their definitions in the OmenMon.xml configuration file -->
+
+  <Messages>
+
+    <!-- Language identifier -->
+    <String Key="_Language">zh_CN</String>
+
+    <!-- CLI -->
+    <String Key="CliHeader">硬件监控 &amp; 控制程序</String>
+    <String Key="CliHeaderVersion">版本</String>
+    <String Key="CliTranslated">zh-CN by Initsnow</String>
+
+    <!-- CLI: BIOS -->
+    <String Key="CliBiosAdapter">智能电源适配器状态</String>
+    <String Key="CliBiosAnim">LED 动画表</String>
+    <String Key="CliBiosBacklight">键盘背光</String>
+    <String Key="CliBiosBornDate">生产日期</String>
+    <String Key="CliBiosColor">键盘背光颜色表</String>
+    <String Key="CliBiosColorZones">区域</String>
+    <String Key="CliBiosCpuPowerLimit1">CPU 功率极限 1</String>
+    <String Key="CliBiosCpuPowerLimit4">CPU 功率极限 4</String>
+    <String Key="CliBiosCpuPowerLimitWithGpu">与 GPU 并发的 CPU 功率限制</String>
+    <String Key="CliBiosFanCount">风扇数</String>
+    <String Key="CliBiosFanLevelN">风扇 #{0} 级别</String>
+    <String Key="CliBiosFanMax">最大风扇转速</String>
+    <String Key="CliBiosFanMode">风扇模式</String>
+    <String Key="CliBiosFanTable">风扇转速等级表</String>
+    <String Key="CliBiosFanTableFans">风扇</String>
+    <String Key="CliBiosFanTableLevels">级别</String>
+    <String Key="CliBiosFanType">风扇类型</String>
+    <String Key="CliBiosFanTypeN">风扇 #{0} 类型</String>
+    <String Key="CliBiosGpuMode">图形模式（传统）</String>
+    <String Key="CliBiosGpuPower">GPU 功率设置</String>
+    <String Key="CliBiosGpuPowerCustomTgp">自定义 GPU 总功率 (cTGP)</String>
+    <String Key="CliBiosGpuPowerDState">GPU 设备电源状态 (DState)</String>
+    <String Key="CliBiosGpuPowerPeakTemperature">GPU 峰值温度传感器阈值</String>
+    <String Key="CliBiosGpuPowerPpab">GPU 处理性能 AI Boost (PPAB)</String>
+    <String Key="CliBiosHasBacklight">键盘背光支持</String>
+    <String Key="CliBiosHasMemoryOverclock">内存超频支持</String>
+    <String Key="CliBiosHasOverclock">超频支持</String>
+    <String Key="CliBiosHasUndervolt">BIOS 降压支持</String>
+    <String Key="CliBiosIdle">空闲模式</String>
+    <String Key="CliBiosKbdType">键盘类型</String>
+    <String Key="CliBiosSystem">系统设计数据</String>
+    <String Key="CliBiosSystemBiosOc">BIOS 定义的超频</String>
+    <String Key="CliBiosSystemDefaultCpuPowerLimit4">默认 CPU 功率限制 4</String>
+    <String Key="CliBiosSystemDefaultCpuPowerLimitWithGpu">带 GPU 的默认 CPU 并发功率限制</String>
+    <String Key="CliBiosSystemDefaultCpuPowerLimitWithGpuNote">Cybug 23C1 起</String>
+    <String Key="CliBiosSystemGpuModeSwitch">图形模式切换支持</String>
+    <String Key="CliBiosSystemStatusFlags">状态标志</String>
+    <String Key="CliBiosSystemSupportFlags">支持标志</String>
+    <String Key="CliBiosSystemThermalPolicyVersion">热策略版本</String>
+    <String Key="CliBiosSystemUnknown2">未知字节</String>
+    <String Key="CliBiosSystemUnknown2Note">观察到的常数 0x35 = 53</String>
+    <String Key="CliBiosTemp">温度</String>
+    <String Key="CliBiosThrottling">热节流状态</String>
+    <String Key="CliBiosXmp">内存 XMP 配置文件</String>
+
+    <!-- CLI: Embedded Controller -->
+    <String Key="CliEc">嵌入式控制器</String>
+    <String Key="CliEcMon">嵌入式控制器监视器</String>
+    <String Key="CliEcRegister">寄存器</String>
+
+    <!-- CLI: Program -->
+    <String Key="CliProg">程序</String>
+    <String Key="CliProgCallback">回调</String>
+    <String Key="CliProgName">程序</String>
+    <String Key="CliProgFanMode">风扇模式</String>
+    <String Key="CliProgGpuPower">GPU 功率</String>
+
+    <!-- CLI: Task -->
+    <String Key="CliTask">任务调度</String>
+    <String Key="CliTaskGui">用户登录时自动运行</String>
+    <String Key="CliTaskKey">Omen Key 拦截</String>
+    <String Key="CliTaskMux">高级 Optimus 错误修复</String>
+
+    <!-- CLI: Usage -->
+    <String Key="CliUsage">使用信息</String>
+    <String Key="CliUsageText">使用方法: {0} [-&lt;Arg1&gt; [...] [-&lt;ArgN&gt; [...]]]
+      Where:
+      &lt;Arg#&gt;
+      -Bios 运行只检索信息的所有 BIOS 操作
+      -Bios &lt;BiosOp&gt;[=&lt;Data&gt;]+ 执行一个或多个带有可选参数的 BIOS 操作
+      -Ec 以表格格式获取所有嵌入式控制器寄存器的值
+      -Ec [&lt;Reg&gt;][=&lt;Byte&gt;]+ 获取或设置一个或多个特定寄存器的字节值
+      -Ec [&lt;Reg&gt;(2)][=&lt;Word&gt;]+ 获取或设置一对或多对连续特定寄存器的字值
+      -EcMon [FileName] 监控所有寄存器值的变化并报告，可选择保存到文件中
+      -Prog 列出从配置文件加载的可用风扇控制程序
+      -Prog &lt;Name&gt; 运行指定的风扇控制程序
+      -Run &lt;TName&gt; [&lt;Args&gt;] 运行指定任务（无头模式，无控制台输出）
+      -Task 检查所有计划任务的状态
+      -Task &lt;TName&gt;[=&lt;Flag&gt;]+ 启用或禁用计划任务
+      -?|-H|[-]-Help|[-]-Usage 显示使用信息
+      &lt;BiosOp&gt;
+      Cpu:PL1=&lt;Byte&gt; Cpu:PL4=&lt;Byte&gt; Cpu:PLGpu=&lt;Byte&gt; Gpu[=&lt;GpuPreset&gt;]
+      GpuMode[=&lt;GpuMode&gt;] Xmp=&lt;Flag&gt;
+      FanCount FanLevel[=&lt;FanLevel&gt;] FanMax[=&lt;Flag&gt;] FanMode=&lt;FanMode&gt;
+      FanTable[=&lt;FanTable&gt;] FanType
+      Idle[=&lt;Flag&gt;] Temp Throttling BornDate System Adapter HasOverclock HasMemoryOverclock
+      HasUndervolt
+      KbdType HasBacklight Backlight[=&lt;Flag&gt;] Color[=&lt;Color&gt;] Anim[=&lt;ByteArray&gt;]
+      &lt;Data&gt;
+      {1}
+      参数不区分大小写。任何参数都可以出现任意多次。</String>
+
+    <!-- GUI -->
+    <String Key="GuiAlreadyRunning">已在后台运行：单击通知区域图标或运行 OmenMon -Usage 获取命令行参数</String>
+    <String Key="GuiPromptReboot">需要重新启动系统\r\n才能使更改生效\r\n\r\n立即重新启动吗？</String>
+    <String Key="GuiTranslated">zh-CN by Initsnow</String>
+
+    <!-- GUI: About (doubles as an error form) -->
+    <String Key="GuiAboutTitle">关于 OmenMon</String>
+    <String Key="GuiAboutTitleError">OmenMon 错误</String>
+    <String Key="GuiAboutCaption">Omen 硬件监测与控制</String>
+    <String Key="GuiAboutText">{\rtf1\ansi 使用 WMI BIOS
+      和嵌入式控制器监控温度和控制风扇速度。轻量级，以极低占用在后台运行。且同时具有命令行模式。}</String>
+    <!-- GUI: Main -->
+    <String Key="GuiMainFan">风扇监测与控制</String>
+    <String Key="GuiMainFanProgSet">设置风扇程序</String>
+    <String Key="GuiMainFanProgSetNoSel">未选择程序</String>
+    <String Key="GuiMainKbd">键盘背光和颜色</String>
+    <String Key="GuiMainKbdColorPickLeft">左区颜色</String>
+    <String Key="GuiMainKbdColorPickMiddle">中间区域颜色</String>
+    <String Key="GuiMainKbdColorPickRight">右区颜色</String>
+    <String Key="GuiMainKbdColorPickWasd">WASD 键颜色</String>
+    <String Key="GuiMainKbdColorPresetAdd">保存预设</String>
+    <String Key="GuiMainKbdColorPresetAddValueDefault">新预设</String>
+    <String Key="GuiMainKbdColorPresetDel">删除预设</String>
+    <String Key="GuiMainKbdColorPresetDelConfirm">你确定吗？</String>
+    <String Key="GuiMainKbdColorPresetDelNoSel">未选择预设</String>
+    <String Key="GuiMainKbdColorPresetDelPrompt">删除</String>
+    <String Key="GuiMainSys">系统状态和信息</String>
+    <String Key="GuiMainSysMsgWelcome">欢迎！</String>
+    <String Key="GuiMainTitle">Omen 硬件监测与控制</String>
+    <String Key="GuiMainTmp">温度传感器读数</String>
+
+    <!-- GUI: Menu -->
+    <String Key="GuiMenuSubFan">风扇</String>
+    <String Key="GuiMenuSubGpu">图像</String>
+    <String Key="GuiMenuActGpuDisplayColor">重新加载颜色配置文件</String>
+    <String Key="GuiMenuActGpuDisplayOff">设置关闭显示</String>
+    <String Key="GuiMenuActGpuPowerMin">基础功率</String>
+    <String Key="GuiMenuActGpuPowerMed">额外功率</String>
+    <String Key="GuiMenuActGpuPowerMax">通过升压获得额外功率</String>
+    <String Key="GuiMenuActGpuRefreshHigh">高刷新率</String>
+    <String Key="GuiMenuActGpuRefreshLow">标准 刷新率</String>
+    <String Key="GuiMenuActGpuModeDiscrete">显卡直连</String>
+    <String Key="GuiMenuActGpuModeOptimus">Optimus 软开关</String>
+    <String Key="GuiMenuSubKbd">键盘</String>
+    <String Key="GuiMenuActKbdBacklight">背光</String>
+    <String Key="GuiMenuActKbdColorPresetDefaultOem">OEM 默认</String>
+    <String Key="GuiMenuSubSet">设置</String>
+    <String Key="GuiMenuActSetStayTop">置顶</String>
+    <String Key="GuiMenuActSetIconDyn">动态图标</String>
+    <String Key="GuiMenuActSetIconDynBg">动态背景</String>
+    <String Key="GuiMenuActSetTaskGui">随系统启动</String>
+    <String Key="GuiMenuActSetAutoconfig">启动时应用设置</String>
+    <String Key="GuiMenuActSetTaskKey">拦截 Omen Key</String>
+    <String Key="GuiMenuActSetTaskMux">高级 Optimus 修复</String>
+    <String Key="GuiMenuActToggleFormMain">显示监视器</String>
+    <String Key="GuiMenuActToggleFormMainHide">隐藏监视器</String>
+    <String Key="GuiMenuActExit">退出</String>
+    <!-- GUI: Tooltips -->
+    <String Key="GuiTipBtnAccept">确认并继续</String>
+    <String Key="GuiTipBtnCancel">取消并关闭对话框</String>
+    <String Key="GuiTipFan0Cap">左侧显示第一个（CPU）风扇读数</String>
+    <String Key="GuiTipFan1Cap">右侧显示第二个（GPU）风扇读数</String>
+    <String Key="GuiTipFanUnitVal">风扇速度以每分钟转数 (rpm) 为单位</String>
+    <String Key="GuiTipFan0Val">实时 CPU 风扇转速读数[rpm]</String>
+    <String Key="GuiTipFan1Val">实时 GPU 风扇转速读数[rpm]</String>
+    <String Key="GuiTipFanUnitRte">风扇相对速率以百分比 (%) 为单位</String>
+    <String Key="GuiTipFan0Rte">CPU 风扇相对速率 [%]</String>
+    <String Key="GuiTipFan0RteBar">以条形图显示 CPU 风扇的相对速率</String>
+    <String Key="GuiTipFan1Rte">GPU 风扇相对速率 [%]</String>
+    <String Key="GuiTipFan1RteBar">GPU 风扇的相对速率用条形图表示 " 注意，原点在右侧</String>
+    <String Key="GuiTipFan0Lvl">CPU 风扇级别 [krpm] "自定义速度：移动滑块 "并单击按钮应用</String>
+    <String Key="GuiTipFan1Lvl">GPU 风扇级别 [krpm] "自定义速度：移动滑块 "并单击按钮应用</String>
+    <String Key="GuiTipFanCountdown">如果适用，此区域显示倒计时，直到 BIOS 自动恢复到默认值"选择 Const 以防止计时器耗尽</String>
+    <String Key="GuiTipFanProg">风扇程序 "速度随温度变化" 根据您的偏好</String>
+    <String Key="GuiTipFanProgCmb">从下拉列表中选择风扇程序</String>
+    <String Key="GuiTipFanAuto">自动模式（默认设置）</String>
+    <String Key="GuiTipFanMode">从下拉列表中选择风扇模式</String>
+    <String Key="GuiTipFanConst">恒速模式 "使用跟踪栏设置每个风扇级别</String>
+    <String Key="GuiTipFanMax">最高转速模式 "风扇以最高转速运行"（5,500 和 5,700 转/分钟）</String>
+    <String Key="GuiTipFanOff">关闭风扇 "完全关闭风扇电源</String>
+    <String Key="GuiTipFanSet">单击以应用当前设置“设置更改时按钮会突出显示</String>
+    <String Key="GuiTipKbdBacklight">打开和关闭键盘背光</String>
+    <String Key="GuiTipKbdColorPreset">从下拉框中选择要应用的颜色预设</String>
+    <String Key="GuiTipKbdColorPresetDel">删除当前选择的预设</String>
+    <String Key="GuiTipKbdColorPresetSet">将当前设置保存为预设</String>
+    <String Key="GuiTipKbdColorVal">通过此参数使用十六进制值调整颜色 "通过命令行设置颜色：OmenMon -Bios
+      Color=&lt;Param&gt;</String>
+    <String Key="GuiTipKbdPic">单击一个区域以更改该区域的颜色“使用颜色选择器，更改立即发生</String>
+    <String Key="GuiTipSys">此处显示系统状态信息</String>
+    <String Key="GuiTipTmpCPUT">CPU 温度</String>
+    <String Key="GuiTipTmpGPTM">GPU 温度</String>
+    <String Key="GuiTipTmpBIOS">BIOS 报告的温度值远低于其他传感器的温度值</String>
+    <String Key="GuiTipTmpIRSN">红外传感器温度</String>
+    <String Key="GuiTipTmpRTMP">平台控制器集线器温度</String>
+    <String Key="GuiTipTmpTMP1">内存温度</String>
+    <String Key="GuiTipTmpTNT2">无法解析</String>
+    <String Key="GuiTipTmpTNT3">储存</String>
+    <String Key="GuiTipTmpTNT4">储存</String>
+    <String Key="GuiTipTmpTNT5">无法解析</String>
+    <String Key="GuiTipTmpUnknown">自定义传感器</String>
+    <String Key="GuiTipTxtInput">输入值</String>
+
+    <!-- Error messages -->
+    <String Key="ErrArgUnknown">未知参数</String>
+    <String Key="ErrBiosCall">BIOS 调用失败</String>
+    <String Key="ErrBiosInit">初始化 BIOS 控制失败。请确保您使用的是兼容的 HP 系统，并且安装了 ACPI\PNP0C14 驱动程序。</String>
+    <String Key="ErrBiosNull">BIOS 控制实例化失败</String>
+    <String Key="ErrBiosSend">调用 BIOS 失败</String>
+    <String Key="ErrBiosSendCommand">命令不可用</String>
+    <String Key="ErrBiosSendSize">输入或输出大小太小</String>
+    <String Key="ErrBiosSendUnknown">来自 BIOS 的未知响应： {0}</String>
+    <String Key="ErrConfigLoad">加载配置数据失败</String>
+    <String Key="ErrConfigSave">保存配置数据失败</String>
+    <String Key="ErrEcInit">初始化嵌入式控制器失败</String>
+    <String Key="ErrEcLock">获取嵌入式控制器独占锁失败</String>
+    <String Key="ErrEcNull">实例化嵌入式控制器失败</String>
+    <String Key="ErrFileSave">保存文件失败</String>
+    <String Key="ErrLocaleNull">实例化可本地化消息系统失败</String>
+    <String Key="ErrLocaleLoad">从外部文件加载本地化信息失败</String>
+    <String Key="ErrNeedRegisterRead">期望从中读取寄存器</String>
+    <String Key="ErrNeedRegisterWrite">期望写入寄存器</String>
+    <String Key="ErrNeedValueBool">需要一个bool标志</String>
+    <String Key="ErrNeedValueByte">需要设置一个字节值</String>
+    <String Key="ErrNeedValueByteArray">需要设置一个字节数组值</String>
+    <String Key="ErrNeedValueColor4">需要四个颜色值的数组</String>
+    <String Key="ErrNeedValueFanLevel">需要一对风扇速度级别</String>
+    <String Key="ErrNeedValueFanMode">需要风扇模式</String>
+    <String Key="ErrNeedValueFanTable">需要风扇表条目数组</String>
+    <String Key="ErrNeedValueGpuMode">需要 GPU 模式</String>
+    <String Key="ErrNeedValueGpuPowerLevel">需要 GPU 功率预设</String>
+    <String Key="ErrNeedValueWord">需要设置一个word值</String>
+    <String Key="ErrNotImplemented">未执行</String>
+    <String Key="ErrProgName">没有这样的程序</String>
+    <String Key="ErrProgNone">未配置任何程序</String>
+    <String Key="ErrUnexpected">Exception</String>
+    <String Key="ErrUnexpectedReally">无可用详细信息</String>
+
+  </Messages>
+
+</OmenMon>
