@@ -111,7 +111,8 @@
 
     <!-- GUI -->
     <String Key="GuiAlreadyRunning">已在后台运行：单击通知区域图标或运行 OmenMon -Usage 获取命令行参数</String>
-    <String Key="GuiPromptReboot">需要重新启动系统\r\n才能使更改生效\r\n\r\n立即重新启动吗？</String>
+    <String Key="GuiPromptReboot">需要重新启动系统才能使更改生效
+      立即重新启动吗？</String>
     <String Key="GuiTranslated">zh-CN by Initsnow</String>
 
     <!-- GUI: About (doubles as an error form) -->
