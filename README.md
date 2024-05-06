@@ -29,7 +29,7 @@ To display console messages with non-ASCII characters, you might additionally ne
 
 ## Acknowledgements
 
-* `zh_CN` Chinese translation [contributed](https://github.com/OmenMon/Localization/pull/1) by **@Initsnow**. Thank you!
+* `zh_CN` Chinese translation [contributed](https://github.com/OmenMon/Localization/pull/1) by **[@Initsnow](https://github.com/Initsnow)**. Thank you!
 
 ## Contributing
 
