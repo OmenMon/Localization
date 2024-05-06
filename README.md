@@ -27,6 +27,10 @@ To display console messages with non-ASCII characters, you might additionally ne
 * Switch the code page to UTF-8: `chcp 65001`
 * Change the console font
 
+## Acknowledgements
+
+* `zh_CN` Chinese translation [contributed](https://github.com/OmenMon/Localization/pull/1) by **@Initsnow**. Thank you!
+
 ## Contributing
 
 To add a new translation:
