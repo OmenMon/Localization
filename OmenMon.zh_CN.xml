@@ -48,7 +48,7 @@
     <String Key="CliBiosIdle">空闲模式</String>
     <String Key="CliBiosKbdType">键盘类型</String>
     <String Key="CliBiosSystem">系统设计数据</String>
-    <String Key="CliBiosSystemBiosOc">BIOS 定义的超频</String>
+    <String Key="CliBiosSystemBiosOc">BIOS 定义的超频设置</String>
     <String Key="CliBiosSystemDefaultCpuPowerLimit4">默认 CPU 短时睿频功耗限制 (PL4)</String>
     <String Key="CliBiosSystemDefaultCpuPowerLimitWithGpu">与 GPU 并发的 CPU 默认功耗限制</String>
     <String Key="CliBiosSystemDefaultCpuPowerLimitWithGpuNote">Cybug 23C1 起</String>
