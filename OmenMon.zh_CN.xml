@@ -18,10 +18,10 @@
 
     <!-- CLI: BIOS -->
     <String Key="CliBiosAdapter">电源适配器状态</String>
-    <String Key="CliBiosAnim">LED 动画表</String>
+    <String Key="CliBiosAnim">LED 动画列表</String>
     <String Key="CliBiosBacklight">键盘背光</String>
     <String Key="CliBiosBornDate">生产日期</String>
-    <String Key="CliBiosColor">键盘背光颜色表</String>
+    <String Key="CliBiosColor">键盘背光颜色列表</String>
     <String Key="CliBiosColorZones">区域</String>
     <String Key="CliBiosCpuPowerLimit1">CPU 长时睿频功耗限制 (PL1)</String>
     <String Key="CliBiosCpuPowerLimit4">CPU 短时睿频功耗限制 (PL4)</String>
@@ -30,7 +30,7 @@
     <String Key="CliBiosFanLevelN">风扇 #{0} 级别</String>
     <String Key="CliBiosFanMax">最大风扇转速</String>
     <String Key="CliBiosFanMode">风扇模式</String>
-    <String Key="CliBiosFanTable">风扇转速等级表</String>
+    <String Key="CliBiosFanTable">风扇转速等级列表</String>
     <String Key="CliBiosFanTableFans">风扇</String>
     <String Key="CliBiosFanTableLevels">级别</String>
     <String Key="CliBiosFanType">风扇类型</String>
