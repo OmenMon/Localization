@@ -142,7 +142,7 @@
 
     <!-- GUI: Menu -->
     <String Key="GuiMenuSubFan">风扇</String>
-    <String Key="GuiMenuSubGpu">图像</String>
+    <String Key="GuiMenuSubGpu">显示</String>
     <String Key="GuiMenuActGpuDisplayColor">重新加载颜色配置文件</String>
     <String Key="GuiMenuActGpuDisplayOff">关闭显示屏</String>
     <String Key="GuiMenuActGpuPowerMin">基础功率</String>
@@ -153,7 +153,7 @@
     <String Key="GuiMenuActGpuModeDiscrete">独显直连模式</String>
     <String Key="GuiMenuActGpuModeOptimus">混合输出模式</String>
     <String Key="GuiMenuSubKbd">键盘</String>
-    <String Key="GuiMenuActKbdBacklight">背光</String>
+    <String Key="GuiMenuActKbdBacklight">启用背光控制</String>
     <String Key="GuiMenuActKbdColorPresetDefaultOem">OEM 默认</String>
     <String Key="GuiMenuSubSet">设置</String>
     <String Key="GuiMenuActSetStayTop">置顶</String>
