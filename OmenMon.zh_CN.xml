@@ -122,8 +122,13 @@
     <String Key="GuiAboutText">{\rtf1\ansi 使用 WMI BIOS 和嵌入式控制器监控温度和控制风扇速度的轻量级程序，以极低占用(相对OGH而言)在后台运行，且具有命令行模式。}</String>
     <!-- GUI: Main -->
     <String Key="GuiMainFan">风扇监测与控制</String>
+    <String Key="GuiMainFanAuto">自动</String>
+    <String Key="GuiMainFanConst">自定义</String>
+    <String Key="GuiMainFanMax">满速</String>
+    <String Key="GuiMainFanProg">高级</String>
     <String Key="GuiMainFanProgSet">设置风扇程序</String>
     <String Key="GuiMainFanProgSetNoSel">未选择程序</String>
+    <String Key="GuiMainFanOff">关闭</String>
     <String Key="GuiMainKbd">键盘背光和颜色</String>
     <String Key="GuiMainKbdColorPickLeft">左区颜色</String>
     <String Key="GuiMainKbdColorPickMiddle">中间区域颜色</String>
