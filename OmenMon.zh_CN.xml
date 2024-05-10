@@ -199,9 +199,9 @@
     <String Key="GuiTipKbdColorPreset">从下拉框中选择要应用的颜色预设</String>
     <String Key="GuiTipKbdColorPresetDel">删除当前选择的预设</String>
     <String Key="GuiTipKbdColorPresetSet">将当前设置保存为预设</String>
-    <String Key="GuiTipKbdColorVal">通过此参数使用十六进制值调整颜色，通过命令行设置颜色：OmenMon -Bios
+    <String Key="GuiTipKbdColorVal">通过该参数以使用十六进制值调整颜色，可通过命令行设置颜色：OmenMon -Bios
       Color=&lt;Param&gt;</String>
-    <String Key="GuiTipKbdPic">单击一个区域以更改该区域的颜色，使用颜色选择器，更改立即应用</String>
+    <String Key="GuiTipKbdPic">单击一个区域以使用颜色选择器更改该区域的背光颜色，更改立即应用</String>
     <String Key="GuiTipSys">此处显示系统状态信息</String>
     <String Key="GuiTipTmpCPUT">CPU 温度</String>
     <String Key="GuiTipTmpGPTM">GPU 温度</String>
