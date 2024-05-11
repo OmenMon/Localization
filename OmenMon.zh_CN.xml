@@ -119,7 +119,7 @@
     <String Key="GuiAboutTitle">关于 OmenMon</String>
     <String Key="GuiAboutTitleError">OmenMon 错误</String>
     <String Key="GuiAboutCaption">Omen 硬件监测与控制工具</String>
-    <String Key="GuiAboutText">{\rtf1\ansi 使用 WMI BIOS 和嵌入式控制器监控温度和控制风扇速度的轻量级程序，以极低占用(相对OGH而言)在后台运行，且具有命令行模式。}</String>
+    <String Key="GuiAboutText">{\rtf1\ansi 使用 WMI BIOS 和嵌入式控制器来监控温度和控制风扇转速的轻量级程序，极低占用，且具有命令行模式。}</String>
     <!-- GUI: Main -->
     <String Key="GuiMainFan">风扇监测与控制</String>
     <String Key="GuiMainFanAuto">预设</String>
