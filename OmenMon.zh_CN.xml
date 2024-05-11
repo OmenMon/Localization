@@ -122,7 +122,7 @@
     <String Key="GuiAboutText">{\rtf1\ansi 使用 WMI BIOS 和嵌入式控制器监控温度和控制风扇速度的轻量级程序，以极低占用(相对OGH而言)在后台运行，且具有命令行模式。}</String>
     <!-- GUI: Main -->
     <String Key="GuiMainFan">风扇监测与控制</String>
-    <String Key="GuiMainFanAuto">自动</String>
+    <String Key="GuiMainFanAuto">预设</String>
     <String Key="GuiMainFanConst">自定义</String>
     <String Key="GuiMainFanMax">满速</String>
     <String Key="GuiMainFanProg">高级</String>
@@ -189,7 +189,7 @@
     <String Key="GuiTipFanCountdown">如果适用，此区域显示倒计时，直到 BIOS 自动恢复到默认值"选择 Const 以防止计时器耗尽</String>
     <String Key="GuiTipFanProg">高级自定义模式（通过配置文件修改）</String>
     <String Key="GuiTipFanProgCmb">从下拉列表中选择自定义的风扇设置</String>
-    <String Key="GuiTipFanAuto">自动模式（自带的设置）</String>
+    <String Key="GuiTipFanAuto">预设模式（自带的设置）</String>
     <String Key="GuiTipFanMode">从下拉列表中选择风扇模式</String>
     <String Key="GuiTipFanConst">自定义模式：通过调整两侧滑块以调整风扇速度</String>
     <String Key="GuiTipFanMax">满速模式：风扇以满速运行（5,500 和 5,700 转/分钟）（警告！风扇处于长时间满转速的情况下将会减少其寿命，请谨慎使用此选项！）</String>
