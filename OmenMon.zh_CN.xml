@@ -18,7 +18,7 @@
 
     <!-- CLI: BIOS -->
     <String Key="CliBiosAdapter">电源适配器状态</String>
-    <String Key="CliBiosAnim">LED 灯光布局</String>
+    <String Key="CliBiosAnim">LED 背光布局</String>
     <String Key="CliBiosBacklight">键盘 RGB 背光</String>
     <String Key="CliBiosBornDate">生产日期</String>
     <String Key="CliBiosColor">键盘 RGB 背光颜色布局</String>
