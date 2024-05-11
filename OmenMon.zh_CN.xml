@@ -18,10 +18,10 @@
 
     <!-- CLI: BIOS -->
     <String Key="CliBiosAdapter">电源适配器状态</String>
-    <String Key="CliBiosAnim">LED 动画列表</String>
-    <String Key="CliBiosBacklight">键盘背光</String>
+    <String Key="CliBiosAnim">LED 灯光布局</String>
+    <String Key="CliBiosBacklight">键盘 RGB 背光</String>
     <String Key="CliBiosBornDate">生产日期</String>
-    <String Key="CliBiosColor">键盘背光颜色列表</String>
+    <String Key="CliBiosColor">键盘 RGB 背光颜色布局</String>
     <String Key="CliBiosColorZones">区域</String>
     <String Key="CliBiosCpuPowerLimit1">CPU 长时睿频功耗限制 (PL1)</String>
     <String Key="CliBiosCpuPowerLimit4">CPU 短时睿频功耗限制 (PL4)</String>
@@ -30,7 +30,7 @@
     <String Key="CliBiosFanLevelN">风扇 #{0} 级别</String>
     <String Key="CliBiosFanMax">最大风扇转速</String>
     <String Key="CliBiosFanMode">风扇模式</String>
-    <String Key="CliBiosFanTable">风扇转速等级列表</String>
+    <String Key="CliBiosFanTable">风扇转速级别</String>
     <String Key="CliBiosFanTableFans">风扇</String>
     <String Key="CliBiosFanTableLevels">级别</String>
     <String Key="CliBiosFanType">风扇类型</String>
@@ -41,7 +41,7 @@
     <String Key="CliBiosGpuPowerDState">GPU 功耗状态 (DState)</String>
     <String Key="CliBiosGpuPowerPeakTemperature">GPU 峰值温度传感器阈值</String>
     <String Key="CliBiosGpuPowerPpab">GPU 处理性能 AI Boost (PPAB)</String>
-    <String Key="CliBiosHasBacklight">键盘背光支持</String>
+    <String Key="CliBiosHasBacklight">键盘 RGB 背光支持</String>
     <String Key="CliBiosHasMemoryOverclock">内存超频支持</String>
     <String Key="CliBiosHasOverclock">超频支持</String>
     <String Key="CliBiosHasUndervolt">BIOS 降压支持</String>
@@ -129,10 +129,10 @@
     <String Key="GuiMainFanProgSet">设置风扇程序</String>
     <String Key="GuiMainFanProgSetNoSel">未选择程序</String>
     <String Key="GuiMainFanOff">关闭</String>
-    <String Key="GuiMainKbd">键盘背光和颜色</String>
-    <String Key="GuiMainKbdColorPickLeft">左区颜色</String>
+    <String Key="GuiMainKbd">键盘 RGB 背光和颜色</String>
+    <String Key="GuiMainKbdColorPickLeft">左侧区域颜色</String>
     <String Key="GuiMainKbdColorPickMiddle">中间区域颜色</String>
-    <String Key="GuiMainKbdColorPickRight">右区颜色</String>
+    <String Key="GuiMainKbdColorPickRight">右侧区域颜色</String>
     <String Key="GuiMainKbdColorPickWasd">WASD 键颜色</String>
     <String Key="GuiMainKbdColorPresetAdd">保存预设</String>
     <String Key="GuiMainKbdColorPresetAddValueDefault">新预设</String>
@@ -195,7 +195,7 @@
     <String Key="GuiTipFanMax">满速模式：风扇以满速运行（5,500 和 5,700 转/分钟）（警告！风扇处于长时间满转速的情况下将会减少其寿命，请谨慎使用此选项！）</String>
     <String Key="GuiTipFanOff">关闭风扇：完全关闭风扇（警告！长期置于此选项可能会减少电脑寿命，同样谨慎使用此选项！）</String>
     <String Key="GuiTipFanSet">单击以应用当前设置，设置更改时按钮会突出显示</String>
-    <String Key="GuiTipKbdBacklight">打开和关闭键盘背光</String>
+    <String Key="GuiTipKbdBacklight">打开和关闭键盘 RGB 背光</String>
     <String Key="GuiTipKbdColorPreset">从下拉框中选择要应用的颜色预设</String>
     <String Key="GuiTipKbdColorPresetDel">删除当前选择的预设</String>
     <String Key="GuiTipKbdColorPresetSet">将当前设置保存为预设</String>
